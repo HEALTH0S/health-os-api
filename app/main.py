@@ -14,3 +14,7 @@ def diagnose(input: SymptomInput):
         "conditions": ["Adrenal Fatigue", "IBS"],
         "treatments": ["Ashwagandha", "Breathwork", "Peppermint Oil"]
     }
+
+@app.get("/")
+def read_root():
+    return {"message": "Health OS is live!"}
